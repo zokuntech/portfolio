@@ -2,7 +2,7 @@ import { steps } from '../data/process'
 
 export default function Process() {
   return (
-    <section style={{ padding: '96px 48px', borderBottom: '1px solid var(--border)' }}>
+    <section className="section-inner" style={{ padding: '96px 48px', borderBottom: '1px solid var(--border)' }}>
       <p style={{
         fontFamily: "'Space Grotesk', sans-serif", fontSize: 10, fontWeight: 600,
         letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--accent)',

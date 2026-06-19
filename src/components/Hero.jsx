@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <div style={{
+    <div className="hero-inner" style={{
       minHeight: '100vh',
       display: 'flex', flexDirection: 'column', justifyContent: 'center',
       padding: '130px 48px 90px',
@@ -63,7 +63,7 @@ export default function Hero() {
         on repeat workflows, manual reporting, CRM cleanup, lead research, or approval processes.
       </p>
 
-      <div style={{
+      <div className="hero-stats" style={{
         display: 'flex', gap: 0, border: '1px solid var(--border)', borderRadius: 6,
         overflow: 'hidden', maxWidth: 520, background: 'var(--mid)',
       }}>

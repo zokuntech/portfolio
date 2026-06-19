@@ -2,7 +2,7 @@ import { cases } from '../data/cases'
 
 export default function CaseStudies() {
   return (
-    <section id="work" style={{ padding: '96px 48px', borderBottom: '1px solid var(--border)' }}>
+    <section id="work" className="section-inner" style={{ padding: '96px 48px', borderBottom: '1px solid var(--border)' }}>
       <p style={{
         fontFamily: "'Space Grotesk', sans-serif", fontSize: 10, fontWeight: 600,
         letterSpacing: '2.5px', textTransform: 'uppercase', color: 'var(--accent)',
@@ -36,7 +36,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
       onMouseEnter={e => e.currentTarget.style.borderColor = '#333'}
       onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
     >
-      <div style={{
+      <div className="case-header" style={{
         display: 'grid', gridTemplateColumns: '52px 1fr auto',
         alignItems: 'start', gap: 20, padding: '32px 32px 0',
       }}>
@@ -73,7 +73,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
           }}>{impact.label}</span>
         </div>
       </div>
-      <div style={{
+      <div className="case-body" style={{
         display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
         margin: '20px 32px 32px 84px',
         border: '1px solid var(--border)', borderRadius: 4, overflow: 'hidden',
@@ -82,7 +82,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
           { label: 'The Problem', text: problem },
           { label: 'The Solution', text: solution },
         ].map((col, i) => (
-          <div key={i} style={{ padding: 18, borderRight: '1px solid var(--border)' }}>
+          <div key={i} className="case-body-col" style={{ padding: 18, borderRight: '1px solid var(--border)' }}>
             <p style={{
               fontFamily: "'Space Grotesk', sans-serif", fontSize: 8, fontWeight: 600,
               letterSpacing: 2, textTransform: 'uppercase', color: 'var(--accent)',
@@ -91,7 +91,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
             <p style={{ fontSize: 12.5, color: '#888', lineHeight: 1.7 }}>{col.text}</p>
           </div>
         ))}
-        <div style={{ padding: 18 }}>
+        <div className="case-body-col" style={{ padding: 18 }}>
           <p style={{
             fontFamily: "'Space Grotesk', sans-serif", fontSize: 8, fontWeight: 600,
             letterSpacing: 2, textTransform: 'uppercase', color: 'var(--accent)',
