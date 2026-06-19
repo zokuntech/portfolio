@@ -58,12 +58,7 @@ export default function Contact() {
   }
 
   return (
-    <div id="contact" className="contact-grid" style={{
-      padding: '96px 48px',
-      display: 'grid', gridTemplateColumns: '1fr 1fr',
-      gap: 80, alignItems: 'start',
-      borderBottom: '1px solid var(--border)',
-    }}>
+    <div id="contact" className="contact-grid">
       <div>
         <p style={{
           fontFamily: "'Space Grotesk', sans-serif", fontSize: 10, fontWeight: 600,
@@ -97,7 +92,7 @@ export default function Contact() {
       </div>
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
-        <div className="form-row" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+        <div className="form-row">
           <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
             <label style={labelStyle}>First Name</label>
             <input name="firstName" type="text" placeholder="John" required
@@ -158,7 +153,7 @@ export default function Contact() {
           />
         </div>
 
-        <div className="form-submit" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 4 }}>
+        <div className="form-submit">
           <span style={{ fontSize: 12, color: '#555' }}>I'll respond within 24 hours.</span>
           <button type="submit" disabled={status === 'loading' || status === 'success'}
             style={{

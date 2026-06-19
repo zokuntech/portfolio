@@ -36,10 +36,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
       onMouseEnter={e => e.currentTarget.style.borderColor = '#333'}
       onMouseLeave={e => e.currentTarget.style.borderColor = 'var(--border)'}
     >
-      <div className="case-header" style={{
-        display: 'grid', gridTemplateColumns: '52px 1fr auto',
-        alignItems: 'start', gap: 20, padding: '32px 32px 0',
-      }}>
+      <div className="case-header">
         <span style={{
           fontFamily: "'Space Grotesk', sans-serif", fontSize: 11, fontWeight: 600,
           color: 'var(--accent)', paddingTop: 4, letterSpacing: '1.5px',
@@ -73,16 +70,12 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
           }}>{impact.label}</span>
         </div>
       </div>
-      <div className="case-body" style={{
-        display: 'grid', gridTemplateColumns: '1fr 1fr 1fr',
-        margin: '20px 32px 32px 84px',
-        border: '1px solid var(--border)', borderRadius: 4, overflow: 'hidden',
-      }}>
+      <div className="case-body">
         {[
           { label: 'The Problem', text: problem },
           { label: 'The Solution', text: solution },
         ].map((col, i) => (
-          <div key={i} className="case-body-col" style={{ padding: 18, borderRight: '1px solid var(--border)' }}>
+          <div key={i} className="case-body-col">
             <p style={{
               fontFamily: "'Space Grotesk', sans-serif", fontSize: 8, fontWeight: 600,
               letterSpacing: 2, textTransform: 'uppercase', color: 'var(--accent)',
@@ -91,7 +84,7 @@ function CaseCard({ num, title, tags, impact, problem, solution, stack, stackImp
             <p style={{ fontSize: 12.5, color: '#888', lineHeight: 1.7 }}>{col.text}</p>
           </div>
         ))}
-        <div className="case-body-col" style={{ padding: 18 }}>
+        <div className="case-body-col">
           <p style={{
             fontFamily: "'Space Grotesk', sans-serif", fontSize: 8, fontWeight: 600,
             letterSpacing: 2, textTransform: 'uppercase', color: 'var(--accent)',

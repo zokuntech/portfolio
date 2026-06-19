@@ -1,9 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer-inner" style={{
-      padding: '28px 48px',
-      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-    }}>
+    <footer className="footer-inner">
       <p style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 12, color: '#444' }}>
         © 2026 — Hector Silva-Robles
       </p>
