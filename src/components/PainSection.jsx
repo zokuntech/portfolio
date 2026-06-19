@@ -23,7 +23,7 @@ const pains = [
 
 export default function PainSection() {
   return (
-    <div style={{
+    <div className="pain-grid" style={{
       padding: '96px 48px',
       borderBottom: '1px solid var(--border)',
       display: 'grid',

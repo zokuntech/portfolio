@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer style={{
+    <footer className="footer-inner" style={{
       padding: '28px 48px',
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
     }}>

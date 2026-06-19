@@ -1,6 +1,6 @@
 export default function Nav() {
   return (
-    <nav style={{
+    <nav className="nav-inner" style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       padding: '18px 48px',
@@ -15,14 +15,14 @@ export default function Nav() {
         Hector<span style={{ color: 'var(--accent)' }}>.</span>
       </a>
       <div style={{ display: 'flex', alignItems: 'center', gap: 28 }}>
-        <a href="#work" style={{
+        <a href="#work" className="nav-links" style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: 'var(--subtle)',
           textDecoration: 'none',
         }}
           onMouseEnter={e => e.target.style.color = 'var(--white)'}
           onMouseLeave={e => e.target.style.color = 'var(--subtle)'}
         >Work</a>
-        <a href="#contact" style={{
+        <a href="#contact" className="nav-links" style={{
           fontFamily: "'DM Sans', sans-serif", fontSize: 13, color: 'var(--subtle)',
           textDecoration: 'none',
         }}

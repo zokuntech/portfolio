@@ -28,3 +28,59 @@ body {
   width: 100%;
   text-align: left;
 }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .nav-inner { padding: 16px 20px; }
+  .nav-links { display: none; }
+
+  .hero-inner { padding: 100px 20px 60px; }
+  .hero-stats { max-width: 100%; }
+
+  .section-inner { padding: 64px 20px; }
+
+  .pain-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 64px 20px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    padding: 64px 20px;
+  }
+
+  .form-row { grid-template-columns: 1fr; }
+
+  .form-submit {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .case-header {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 24px 20px 0;
+  }
+
+  .case-body {
+    grid-template-columns: 1fr;
+    margin: 16px 20px 20px;
+  }
+
+  .case-body-col {
+    border-right: none !important;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .case-body-col:last-child { border-bottom: none; }
+
+  .footer-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 24px 20px;
+  }
+}
