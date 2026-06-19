@@ -23,14 +23,7 @@ const pains = [
 
 export default function PainSection() {
   return (
-    <div className="pain-grid" style={{
-      padding: '96px 48px',
-      borderBottom: '1px solid var(--border)',
-      display: 'grid',
-      gridTemplateColumns: '1fr 1fr',
-      gap: 80,
-      alignItems: 'center',
-    }}>
+    <div className="pain-grid">
       <div>
         <p style={{
           fontFamily: "'Space Grotesk', sans-serif", fontSize: 10, fontWeight: 600,

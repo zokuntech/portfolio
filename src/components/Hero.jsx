@@ -3,7 +3,6 @@ export default function Hero() {
     <div className="hero-inner" style={{
       minHeight: '100vh',
       display: 'flex', flexDirection: 'column', justifyContent: 'center',
-      padding: '130px 48px 90px',
       borderBottom: '1px solid var(--border)',
       position: 'relative', overflow: 'hidden',
     }}>

@@ -3,7 +3,6 @@ export default function Nav() {
     <nav className="nav-inner" style={{
       position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-      padding: '18px 48px',
       borderBottom: '1px solid var(--border)',
       background: 'rgba(10,10,10,0.94)',
       backdropFilter: 'blur(16px)',
